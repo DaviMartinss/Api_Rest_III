@@ -44,7 +44,7 @@ OBS: Se o Visual Studio estiver instalado na sua máquina, é recomendado atuali
 Abra o PgAdim 4, no Visual Studio Code, abra o terminal e digite o seguinte comando: dotnet ef database update. Após digitar tal comando o banco de dados da aplicação deverá está no PgAdim, caso contrário verifique o Server e a port.
     <ul>
         <li> Execução pelo terminal do Visual Studio Code: Abra o Terminal, entre na pasta da aplicação, e por último, digite o seguinte comando: dotnet run.
-        <li> Abra o Postman e importe o arquivo api_rest.postman_collection.json que está na pasta api_Rest Postman. Em seguinda, dentro do POST USER você terá que enviar uma requição com o a api em execução. Tal requição irá gerar um token que será usado em todas as requisições feitas nas demais rotas, mas antes você deverá ir no campo de Authorization e em value faça a substituição pelo o token atual.
+        <li> Abra o Postman e importe o arquivo api_rest.postman_collection.json que está na pasta api_Rest Postman. Em seguinda, dentro do POST LOGIN você terá que enviar uma requição com o a api em execução. Tal requição irá gerar um token que será usado em todas as requisições feitas nas demais rotas, mas antes você deverá ir no campo de Authorization e em value faça a substituição pelo o token atual.
     </ul>
 
 <h1 id="rota"> Rotas Para o Direcionamento</h1>
