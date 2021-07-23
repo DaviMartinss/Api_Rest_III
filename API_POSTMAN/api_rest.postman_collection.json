@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "767ee103-f2bb-4635-b318-69905f6e338b",
+		"name": "api_rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST CATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST LOGIN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var res = pm.response.json();\r",
+							"pm.environment.set('token', 'Bearer'+res.result.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"Davi\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/authentication",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET CATEGORY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{(baseURL)}/category/101",
+					"host": [
+						"{(baseURL)}"
+					],
+					"path": [
+						"category",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PRODUCT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CATEGORY",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PRODUCT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "PUT USER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CATEGORY",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
