@@ -9,6 +9,7 @@ tokens de autenticação e padrões de projetos, como Unit Of Work e Request/Res
   <li><a href = "#Maquina"> Configuração de Máquina</a></li>
   <li><a href = "#VsCode"> Configuração do VS Code</a></li>
   <li><a href = "#rota"> Rotas</a></li>
+  <li><a href= "#Rodando"> Rodando Projeto</a></li>
   
  </ul>
  
@@ -38,8 +39,8 @@ OBS: Se o Visual Studio estiver instalado na sua máquina, é recomendado atuali
   <li><a href="https://marketplace.visualstudio.com/items?itemName=k--kato.docomment">C# XML Documentation</a></li>
   
 </ul>
-
-### Rodando o Projeto
+    
+<h1 id="Rodando"> Rodando o Projeto</h1>
 Abra o PgAdim 4, no Visual Studio Code, abra o terminal e digite o seguinte comando: dotnet ef database update. Após digitar tal comando o banco de dados da aplicação deverá está no PgAdim, caso contrário verifique o Server e a port.
     <ul>
         <li> Execução pelo terminal do Visual Studio Code: Abra o Terminal, entre na pasta da aplicação, e por último, digite o seguinte comando: dotnet run.
